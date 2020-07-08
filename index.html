@@ -1,0 +1,37 @@
+<!doctype html> 
+
+<html>
+    <head> 
+        <title>THIS IS OUR FIRST WEBPAGE</title>
+        
+        <style>
+            body {background-color: peachpuff;}
+            .redtext {color: palevioletred;
+                     text-align: center;}
+            .mydivstyle {background-color: palevioletred;
+                        font-size: 100px;
+                        color: peachpuff;
+                        text-align: center;}
+            button {background-color: palegoldenrod;
+                    margin-left: 46%;}
+        </style>
+        <script>
+            function change_the_text_to(what) {
+                
+                if (document.getElementById('output').innerHTML == what) {
+                    document.getElementById('output').innerHTML = ''
+                } else {
+                    
+                    document.getElementById('output').innerHTML = what
+                }
+            }
+        </script>
+    </head>
+    
+    <body> 
+        <h1 class="redtext"> Hello Universe!</h1>
+        <button type="button" onclick="change_the_text_to('Hello World!')">CLICK HERE</button>
+        <div id="output" class="mydivstyle"></div>
+    </body>
+
+</html> 
